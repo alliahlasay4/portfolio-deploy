@@ -4,24 +4,43 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-slate-950/70 backdrop-blur-md">
+    <nav className="fixed w-full top-0 z-50 bg-dark text-white shadow-md">
 
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <h1 className="text-white font-bold text-xl">
+        <h1 className="font-bold text-xl">
           My Portfolio
         </h1>
 
-        <ul className="hidden md:flex gap-8 text-gray-300">
-          <li><a href="#about" className="hover:text-white">About</a></li>
-          <li><a href="#skills" className="hover:text-white">Skills</a></li>
-          <li><a href="#projects" className="hover:text-white">Projects</a></li>
-          <li><a href="#contact" className="hover:text-white">Contact</a></li>
+        <ul className="hidden md:flex gap-8">
+          <li>
+            <a href="#about" className="hover:text-accent transition">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#skills" className="hover:text-accent transition">
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects" className="hover:text-accent transition">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact" className="hover:text-accent transition">
+              Contact
+            </a>
+          </li>
         </ul>
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-white"
+          className="md:hidden text-white text-xl"
         >
           ☰
         </button>
@@ -29,11 +48,11 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-slate-900 text-center py-4 space-y-4">
-          <a href="#about" className="block text-gray-300">About</a>
-          <a href="#skills" className="block text-gray-300">Skills</a>
-          <a href="#projects" className="block text-gray-300">Projects</a>
-          <a href="#contact" className="block text-gray-300">Contact</a>
+        <div className="md:hidden bg-dark text-center py-4 space-y-4 border-t border-secondary">
+          <a href="#about" className="block hover:text-accent">About</a>
+          <a href="#skills" className="block hover:text-accent">Skills</a>
+          <a href="#projects" className="block hover:text-accent">Projects</a>
+          <a href="#contact" className="block hover:text-accent">Contact</a>
         </div>
       )}
 
