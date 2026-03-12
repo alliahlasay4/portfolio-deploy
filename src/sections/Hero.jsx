@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import me from "../assets/me2.png";
 
+
 export default function Hero() {
   return (
     <section
@@ -27,7 +28,7 @@ export default function Hero() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight"
           >
-            <span className="block">WEB</span>
+            <span className="block">FRONTEND</span>
             <span className="block text-secondary">DEVELOPER</span>
           </motion.h1>
 
@@ -37,7 +38,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-base md:text-lg text-dark max-w-xl mx-auto lg:mx-0"
           >
-            I'm a web developer focused on building modern web
+            I'm a Frontend developer focused on building modern web
             applications using React and creating clean,
             intuitive user interfaces.
           </motion.p>
@@ -47,7 +48,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex justify-center lg:justify-start gap-4 md:gap-6"
+            className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6"
           >
             <a
               href="#projects"
@@ -61,6 +62,14 @@ export default function Hero() {
               className="px-6 md:px-8 py-3 md:py-4 border-2 border-dark text-dark rounded-xl hover:bg-dark hover:text-white transition"
             >
               Contact Me
+            </a>
+
+            <a
+              href="/Lasay_CV.pdf"
+              download
+              className="px-6 md:px-8 py-3 md:py-4 border-2 border-dark text-dark rounded-xl hover:bg-dark hover:text-white transition"
+            >
+              Download CV
             </a>
           </motion.div>
 
@@ -81,7 +90,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/alliah-cassandra-lasay-28519326a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-dark text-2xl hover:text-secondary hover:scale-110 transition"

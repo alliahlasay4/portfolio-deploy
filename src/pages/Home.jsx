@@ -6,6 +6,7 @@ import Experience from "../sections/Experience";
 import Achievements from "../sections/Achievements";
 import Contact from "../sections/Contact";
 import Footer from "../components/layout/Footer";
+import Skills from "../sections/Skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Projects />
       <Experience />
       <Achievements />

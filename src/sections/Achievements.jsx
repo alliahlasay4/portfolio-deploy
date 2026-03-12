@@ -29,7 +29,7 @@ const card = {
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-28 bg-primary">
+    <section id="achievements" className="py-28 bg-white">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -66,7 +66,7 @@ export default function Achievements() {
                   variants={card}
                   whileHover={{ y: -4, scale: 1.02 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-white rounded-lg p-4 shadow hover:shadow-md transition"
+                  className="bg-primary rounded-lg p-4 shadow hover:shadow-md transition"
                 >
                   {item}
                 </motion.div>
@@ -95,7 +95,7 @@ export default function Achievements() {
                   variants={card}
                   whileHover={{ y: -4, scale: 1.02 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-white rounded-lg p-4 shadow hover:shadow-md transition"
+                  className="bg-primary rounded-lg p-4 shadow hover:shadow-md transition"
                 >
                   {item}
                 </motion.div>

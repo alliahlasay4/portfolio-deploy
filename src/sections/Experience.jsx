@@ -33,7 +33,7 @@ const card = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-28 bg-white">
+    <section id="experience" className="py-28 bg-primary">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* TITLE ANIMATION */}
@@ -61,7 +61,7 @@ export default function Experience() {
               variants={card}
               whileHover={{ y: -6, scale: 1.01 }}
               transition={{ duration: 0.25 }}
-              className="bg-primary rounded-xl p-8 shadow-md hover:shadow-lg transition"
+              className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition"
             >
 
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">

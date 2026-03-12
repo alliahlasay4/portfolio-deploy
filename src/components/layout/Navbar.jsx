@@ -4,9 +4,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-dark text-white shadow-md">
+    <nav className="fixed inset-x-0 top-0 z-50 bg-dark text-white shadow-md">
 
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
 
         <h1 className="font-bold text-xl">
           My Portfolio
