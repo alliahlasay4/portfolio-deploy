@@ -5,6 +5,7 @@ export const projects = [
       "Capstone project: a web-based blood donation management system designed to manage donor records, track blood drive events, and streamline data organization for administrators.",
     tech: ["React", "PHP", "MongoDB", "JavaScript", "Tailwind"],
     github: "#",
+    demo: "#",
     image: "/projects/blood-system.png",
   },
 
@@ -14,6 +15,7 @@ export const projects = [
       "Frontend interface for an internship management platform built with React.",
     tech: ["React", "JavaScript", "HTML", "CSS"],
     github: "#",
+    demo: "#",
     image: "/projects/intern-system.png",
   },
 
@@ -23,6 +25,7 @@ export const projects = [
       "Web application for managing employee records with role-based access and CRUD operations, designed with a responsive interface.",
     tech: ["HTML", "CSS", "JavaScript", "MongoDB"],
     github: "#",
+    demo: "#",
     image: "/projects/employee-system.png",
   },
 
@@ -32,6 +35,7 @@ export const projects = [
       "Android mobile application for managing loan records with login authentication and CRUD functionality.",
     tech: ["Java", "SQLite", "Android Studio"],
     github: "#",
+    demo: "#",
     image: "/projects/loaning-app.png",
   },
 
@@ -41,6 +45,7 @@ export const projects = [
       "A simple productivity web application that allows users to create, edit, and delete tasks. Built with vanilla JavaScript and responsive styling.",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
+    demo: "#",
     image: "/projects/todo-app.png",
     
   },
@@ -51,6 +56,7 @@ export const projects = [
       "A responsive food ordering interface where users can browse menu items, add products to a cart, and simulate an ordering process using dynamic cart functionality.",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
+    demo: "#",
     image: "/projects/food-system.png",
   },
 
@@ -60,6 +66,7 @@ export const projects = [
       "Android mobile application for listing grocery items and calculating shopping expenses.",
     tech: ["Java", "Android Studio"],
     github: "#",
+    demo: "#",
     image: "/projects/grocery-app.png",
   },
 

@@ -9,7 +9,18 @@ export default function Hero() {
       id="hero"
       className="min-h-screen bg-primary flex items-center pt-24 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 items-center gap-12">
+      <div
+        className="
+  absolute inset-0
+  bg-[url('/backgrounds/bg.png')]
+  bg-cover
+  bg-[position:60%_center]
+  opacity-20
+  pointer-events-none
+  blur-[1px]
+  "
+      ></div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 items-center gap-12">
 
         {/* LEFT SIDE */}
         <div className="space-y-6 text-center lg:text-left">
@@ -17,7 +28,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-dark text-lg md:text-xl"
+            className="text-dark text-lg md:text-xl text-dark/90 font-medium"
           >
             Hi, I'm Alliah!
           </motion.p>
@@ -36,7 +47,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-base md:text-lg text-dark max-w-xl mx-auto lg:mx-0"
+            className="text-base md:text-lg text-dark max-w-xl mx-auto lg:mx-0 mb-2"
           >
             I'm a Frontend developer focused on building modern web
             applications using React and creating clean,
@@ -71,6 +82,8 @@ export default function Hero() {
             >
               Download CV
             </a>
+
+
           </motion.div>
 
           {/* SOCIAL LINKS */}

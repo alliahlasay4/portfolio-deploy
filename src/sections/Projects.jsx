@@ -24,7 +24,10 @@ export default function Projects() {
     <section id="projects" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        {/* FEATURED */}
+        <p className="text-secondary font-medium mb-2">
+          Portfolio
+        </p>
+
         <h2 className="text-4xl md:text-5xl font-bold text-dark mb-12">
           Featured Projects
         </h2>
@@ -60,7 +63,7 @@ export default function Projects() {
           <button
             disabled={page === 0}
             onClick={() => setPage(page - 1)}
-            className="px-4 py-2 bg-primary rounded-lg shadow disabled:opacity-40"
+            className="px-4 py-2 bg-primary rounded-lg shadow hover:shadow-md transition disabled:opacity-40"
           >
             Prev
           </button>
@@ -72,7 +75,7 @@ export default function Projects() {
           <button
             disabled={page === pageCount - 1}
             onClick={() => setPage(page + 1)}
-            className="px-4 py-2 bg-primary rounded-lg shadow disabled:opacity-40"
+            className="px-4 py-2 bg-primary rounded-lg shadow hover:shadow-md transition disabled:opacity-40"
           >
             Next
           </button>
@@ -93,32 +96,34 @@ export default function Projects() {
 function ProjectCard({ project, featured, onClick }) {
   return (
     <motion.div
-      whileHover={{ y: -8 }}
+      whileHover={{ y: -10 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
       onClick={onClick}
       className={`
-        bg-primary
-        rounded-xl
-        shadow-md
-        hover:shadow-xl
-        transition
-        overflow-hidden
-        cursor-pointer
-        ${featured ? "border-2 border-secondary" : ""}
-      `}
+    bg-primary
+    rounded-xl
+    shadow-md
+    hover:shadow-2xl
+    transition
+    overflow-hidden
+    cursor-pointer
+    flex flex-col
+    ${featured ? "border-2 border-secondary" : ""}
+  `}
     >
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
       />
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-dark mb-3">
           {project.title}
         </h3>
 
-        <p className="text-dark text-sm mb-4">
+        <p className="text-dark text-sm mb-4 flex-grow">
           {project.description}
         </p>
 
@@ -150,20 +155,41 @@ function ProjectModal({ project, close }) {
         p-6
       ">
 
-        <div className="
-          bg-primary
-          rounded-xl
-          max-w-3xl
-          w-full
-          max-h-[85vh]
-          overflow-y-auto
-          p-8
-          relative
-        ">
+        <div
+          className="
+  bg-primary
+  rounded-xl
+  max-w-3xl
+  w-full
+  max-h-[85vh]
+  overflow-y-auto
+  p-6 md:p-8
+  pt-12
+  relative
+  shadow-2xl
+"
+        >
 
           <button
             onClick={close}
-            className="absolute top-4 right-4 text-xl text-dark"
+            className="
+    absolute
+    top-4
+    right-4
+    w-10
+    h-10
+    flex
+    items-center
+    justify-center
+    rounded-full
+    bg-white
+    shadow-md
+    text-lg
+    text-dark
+    hover:bg-accent
+    transition
+    z-10
+  "
           >
             ✕
           </button>
@@ -173,14 +199,7 @@ function ProjectModal({ project, close }) {
             src={project.image}
             alt={project.title}
             onClick={() => setZoomed(true)}
-            className="
-              w-full
-              h-64
-              object-cover
-              rounded-lg
-              mb-6
-              cursor-zoom-in
-            "
+            className="w-full h-64 object-cover rounded-lg mt-2 mb-6 cursor-zoom-in"
           />
 
           <h2 className="text-2xl font-bold text-dark mb-3">
@@ -201,13 +220,27 @@ function ProjectModal({ project, close }) {
               </span>
             ))}
           </div>
+          <div className="flex gap-4">
 
-          <a
-            href={project.github}
-            className="bg-secondary text-primary px-5 py-3 rounded-lg font-medium"
-          >
-            View Code
-          </a>
+            <a
+              href={project.github}
+              target="_blank"
+              className="bg-secondary text-primary px-5 py-3 rounded-lg font-medium hover:opacity-90 transition"
+            >
+              View Code
+            </a>
+
+            {project.demo && (
+              <a
+                href={project.demo}
+                target="_blank"
+                className="border border-dark text-dark px-5 py-3 rounded-lg font-medium hover:bg-dark hover:text-white transition"
+              >
+                Live Demo
+              </a>
+            )}
+
+          </div>
 
         </div>
       </div>
