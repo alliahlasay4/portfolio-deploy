@@ -6,7 +6,7 @@ export const projects = [
     tech: ["React", "PHP", "MongoDB", "JavaScript", "Tailwind"],
     github: "#",
     demo: "#",
-    image: "/projects/blood-system.png",
+    image: "projects/blood-system.png",
   },
 
   {
@@ -16,7 +16,7 @@ export const projects = [
     tech: ["React", "JavaScript", "HTML", "CSS"],
     github: "#",
     demo: "#",
-    image: "/projects/intern-system.png",
+    image: "projects/intern-system.png",
   },
 
   {
@@ -26,7 +26,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "MongoDB"],
     github: "#",
     demo: "#",
-    image: "/projects/employee-system.png",
+    image: "projects/employee-system.png",
   },
 
   {
@@ -36,7 +36,7 @@ export const projects = [
     tech: ["Java", "SQLite", "Android Studio"],
     github: "#",
     demo: "#",
-    image: "/projects/loaning-app.png",
+    image: "projects/loaning-app.png",
   },
 
   {
@@ -46,7 +46,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
     demo: "#",
-    image: "/projects/todo-app.png",
+    image: "projects/todo-app.png",
     
   },
 
@@ -57,7 +57,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
     demo: "#",
-    image: "/projects/food-system.png",
+    image: "projects/food-system.png",
   },
 
   {
@@ -67,7 +67,7 @@ export const projects = [
     tech: ["Java", "Android Studio"],
     github: "#",
     demo: "#",
-    image: "/projects/grocery-app.png",
+    image: "projects/grocery-app.png",
   },
 
   {
