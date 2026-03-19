@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { projects } from "../data/projects";
 
 export default function Projects() {
@@ -113,7 +113,7 @@ function ProjectCard({ project, featured, onClick }) {
   `}
     >
       <img
-        src={project.image}
+        src={project.images?.[0]}
         alt={project.title}
         className="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
       />
@@ -144,6 +144,12 @@ function ProjectCard({ project, featured, onClick }) {
 
 function ProjectModal({ project, close }) {
   const [zoomed, setZoomed] = useState(false);
+
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    setImageIndex(0);
+  }, [project]);
 
   return (
     <>
@@ -195,13 +201,46 @@ function ProjectModal({ project, close }) {
           </button>
 
           {/* CLICKABLE IMAGE */}
-          <img
-            src={project.image}
-            alt={project.title}
-            onClick={() => setZoomed(true)}
-            className="w-full h-64 object-cover rounded-lg mt-2 mb-6 cursor-zoom-in"
-          />
+          <div className="relative mb-6">
 
+            <img
+              src={project.images?.[imageIndex]}
+              alt={project.title}
+              onClick={() => setZoomed(true)}
+              className="max-w-full max-h-full rounded-lg shadow-2xl"
+            />
+
+            {project.images?.length > 1 && (
+              <>
+                <button
+                  onClick={() =>
+                    setImageIndex(
+                      imageIndex === 0
+                        ? project.images.length - 1
+                        : imageIndex - 1
+                    )
+                  }
+                  className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded shadow"
+                >
+                  ‹
+                </button>
+
+                <button
+                  onClick={() =>
+                    setImageIndex(
+                      imageIndex === project.images.length - 1
+                        ? 0
+                        : imageIndex + 1
+                    )
+                  }
+                  className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded shadow"
+                >
+                  ›
+                </button>
+              </>
+            )}
+
+          </div>
           <h2 className="text-2xl font-bold text-dark mb-3">
             {project.title}
           </h2>
@@ -250,26 +289,22 @@ function ProjectModal({ project, close }) {
         <div
           onClick={() => setZoomed(false)}
           className="
-            fixed inset-0
-            bg-black/90
-            flex items-center justify-center
-            z-[60]
-            p-6
-            cursor-zoom-out
-          "
+      fixed inset-0
+      bg-black/90
+      flex items-center justify-center
+      z-[60]
+      p-6
+      cursor-zoom-out
+    "
         >
           <img
-            src={project.image}
+            src={project.images?.[imageIndex]}
             alt={project.title}
-            className="
-              max-w-full
-              max-h-full
-              rounded-lg
-              shadow-2xl
-            "
+            className="max-w-full max-h-full rounded-lg shadow-2xl"
           />
         </div>
       )}
+
     </>
   );
 }

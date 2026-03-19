@@ -6,7 +6,11 @@ export const projects = [
     tech: ["React", "PHP", "MongoDB", "JavaScript", "Tailwind"],
     github: "#",
     demo: "#",
-    image: "/projects/blood-system.png",
+    images: [
+      "/portfolio/projects/blood-system-1.png",
+      "/portfolio/projects/blood-system-2.png",
+      "/portfolio/projects/blood-system-3.png"
+    ]
   },
 
   {
@@ -16,7 +20,11 @@ export const projects = [
     tech: ["React", "JavaScript", "HTML", "CSS"],
     github: "#",
     demo: "#",
-    image: "/projects/intern-system.png",
+    images: [
+      "/portfolio/projects/intern-system-1.png",
+      "/portfolio/projects/intern-system-2.png",
+      "/portfolio/projects/intern-system-3.png"
+    ]
   },
 
   {
@@ -26,7 +34,11 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "MongoDB"],
     github: "#",
     demo: "#",
-    image: "/projects/employee-system.png",
+    images: [
+      "/portfolio/projects/employee-system-1.png",
+      "/portfolio/projects/employee-system-2.png",
+      "/portfolio/projects/employee-system-3.png"
+    ]
   },
 
   {
@@ -36,7 +48,11 @@ export const projects = [
     tech: ["Java", "SQLite", "Android Studio"],
     github: "#",
     demo: "#",
-    image: "/projects/loaning-app.png",
+    images: [
+      "/portfolio/projects/loaning-app-1.png",
+      "/portfolio/projects/loaning-app-2.png",
+      "/portfolio/projects/loaning-app-3.png"
+    ]
   },
 
   {
@@ -46,8 +62,12 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
     demo: "#",
-    image: "/projects/todo-app.png",
-    
+    images: [
+      "/portfolio/projects/todo-app-1.png",
+      "/portfolio/projects/todo-app-2.png",
+      "/portfolio/projects/todo-app-3.png"
+    ]
+
   },
 
   {
@@ -57,7 +77,11 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
     demo: "#",
-    image: "/projects/food-system.png",
+    images: [
+      "/portfolio/projects/food-system-1.png",
+      "/portfolio/projects/food-system-2.png",
+      "/portfolio/projects/food-system-3.png"
+    ]
   },
 
   {
@@ -67,7 +91,11 @@ export const projects = [
     tech: ["Java", "Android Studio"],
     github: "#",
     demo: "#",
-    image: "/projects/grocery-app.png",
+    images: [
+      "/portfolio/projects/grocery-app-1.png",
+      "/portfolio/projects/grocery-app-2.png",
+      "/portfolio/projects/grocery-app-3.png"
+    ]
   },
 
   {
