@@ -25,7 +25,7 @@ export const projects = [
     role: "Frontend",
     date: "December 2025",
     tech: ["HTML", "CSS", "jQuery", "Bootstrap", "PHP", "Laravel", "MySQL"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/blood-donation-management-system",
     demo: "#",
     images: [
       "/portfolio/projects/blood-system-1.png",
@@ -58,9 +58,9 @@ export const projects = [
     ],
 
     role: "Frontend",
-    date: "November 2025",
+    date: "February 2026",
     tech: ["React", "JavaScript", "HTML", "CSS"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/inturn",
     demo: "#",
     images: [
       "/portfolio/projects/intern-system-1.png",
@@ -93,9 +93,9 @@ export const projects = [
     ],
 
     role: "Backend",
-    date: "October 2025",
+    date: "July 2025",
     tech: ["HTML", "CSS", "JavaScript", "MongoDB"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/employee-ms",
     demo: "#",
     images: [
       "/portfolio/projects/employee-system-1.png",
@@ -127,9 +127,9 @@ export const projects = [
     ],
 
     role: "Mobile Developer (Frontend)",
-    date: "September 2025",
+    date: "December 2024",
     tech: ["Java", "SQLite", "Android Studio"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/saloan",
     demo: "#",
     images: [
       "/portfolio/projects/loaning-app-1.png",
@@ -162,9 +162,9 @@ export const projects = [
     ],
 
     role: "Frontend",
-    date: "August 2025",
+    date: "July 2025",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/todo",
     demo: "#",
     images: [
       "/portfolio/projects/todo-app-1.png",
@@ -195,9 +195,9 @@ export const projects = [
     ],
 
     role: "Fullstack",
-    date: "July 2025",
+    date: "June 2025",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/foodpanda",
     demo: "#",
     images: [
       "/portfolio/projects/food-system-1.png",
@@ -229,9 +229,9 @@ export const projects = [
     ],
 
     role: "Mobile Developer",
-    date: "June 2025",
+    date: "November 2024",
     tech: ["Java", "Android Studio"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/grocery-calculator",
     demo: "#",
     images: [
       "/portfolio/projects/grocery-app-1.png",
@@ -262,9 +262,9 @@ export const projects = [
     ],
 
     role: "Frontend",
-    date: "May 2025",
+    date: "May 2024",
     tech: ["PHP", "HTML", "CSS"],
-    github: "#",
+    github: "https://github.com/alliahlasay4/song-archive",
     demo: "#",
     images: [
       "/portfolio/projects/song-archive-system-1.png",

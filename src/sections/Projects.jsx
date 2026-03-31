@@ -21,18 +21,18 @@ export default function Projects() {
     others.slice(page * perPage, page * perPage + perPage);
 
   return (
-    <section id="projects" className="py-16 md:py-20 bg-white scroll-mt-24">
+    <section id="projects" className="py-14 md:py-16 bg-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        <p className="text-secondary font-medium mb-2">
+        <p className="text-secondary font-medium mb-1">
           Portfolio
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-bold text-dark mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-dark mb-8">
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featured.map((project, index) => (
             <ProjectCard
               project={project}
@@ -44,11 +44,11 @@ export default function Projects() {
         </div>
 
         {/* OTHER PROJECTS */}
-        <h3 className="text-3xl font-bold text-dark mb-10">
+        <h3 className="text-3xl font-bold text-dark mb-6">
           Other Projects
         </h3>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {paginatedProjects.map((project, index) => (
             <ProjectCard
               project={project}
@@ -59,7 +59,7 @@ export default function Projects() {
         </div>
 
         {/* PAGINATION */}
-        <div className="flex justify-center gap-4 mt-12">
+        <div className="flex justify-center gap-3 mt-8">
           <button
             disabled={page === 0}
             onClick={() => setPage(page - 1)}
@@ -120,12 +120,12 @@ function ProjectCard({ project, featured, onClick }) {
         className="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
       />
 
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-dark mb-3">
+      <div className="p-5 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-dark mb-2">
           {project.title}
         </h3>
 
-        <p className="text-dark text-sm mb-4 flex-grow">
+        <p className="text-dark text-sm mb-3 flex-grow">
           {project.description}
         </p>
 
@@ -271,7 +271,7 @@ function ProjectModal({ project, close, onPrev, onNext }) {
             </span>
           </div>
 
-          
+
           <div className="space-y-4 text-dark text-sm mb-6">
 
             {/* Problem */}
@@ -325,7 +325,15 @@ function ProjectModal({ project, close, onPrev, onNext }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 text-sm font-medium border border-dark rounded-lg hover:bg-dark hover:text-white transition"
+                className="
+  flex items-center gap-2
+  px-4 py-2 text-sm font-medium
+  bg-secondary text-primary
+  rounded-lg
+  shadow-md
+  hover:shadow-lg hover:opacity-90
+  transition
+"
               >
                 View Code
               </a>

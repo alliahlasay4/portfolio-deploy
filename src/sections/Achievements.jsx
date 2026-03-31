@@ -29,7 +29,7 @@ const card = {
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-16 md:py-20 bg-white scroll-mt-24">
+    <section id="achievements" className="py-14 md:py-16 bg-white scroll-mt-24">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -39,17 +39,17 @@ export default function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-dark mb-10"
+          className="text-4xl md:text-5xl font-bold text-dark mb-6"
         >
           Achievements & Certifications
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
 
           {/* ACHIEVEMENTS */}
           <div>
 
-            <h3 className="text-xl md:text-2xl font-semibold text-dark mb-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-dark mb-3">
               Achievements
             </h3>
 
@@ -58,7 +58,7 @@ export default function Achievements() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="space-y-3"
+              className="space-y-2"
             >
               {achievements.map((item, index) => (
                 <motion.div
@@ -66,7 +66,7 @@ export default function Achievements() {
                   variants={card}
                   whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-primary rounded-lg p-3.5 shadow hover:shadow-md transition text-sm text-dark"
+                  className="bg-primary rounded-lg p-3 shadow hover:shadow-md transition text-sm text-dark"
                 >
                   {item}
                 </motion.div>
@@ -78,7 +78,7 @@ export default function Achievements() {
           {/* CERTIFICATIONS */}
           <div>
 
-            <h3 className="text-xl md:text-2xl font-semibold text-dark mb-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-dark mb-3">
               Certifications
             </h3>
 
@@ -87,7 +87,7 @@ export default function Achievements() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="space-y-3"
+              className="space-y-2"
             >
               {certifications.map((item, index) => (
                 <motion.div
@@ -95,7 +95,7 @@ export default function Achievements() {
                   variants={card}
                   whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-primary rounded-lg p-3.5 shadow hover:shadow-md transition text-sm text-dark"
+                  className="bg-primary rounded-lg p-3 shadow hover:shadow-md transition text-sm text-dark"
                 >
                   {item}
                 </motion.div>

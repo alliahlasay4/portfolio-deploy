@@ -33,7 +33,7 @@ const card = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 md:py-20 bg-primary scroll-mt-24">
+    <section id="experience" className="py-14 md:py-16 bg-primary scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* TITLE */}
@@ -42,7 +42,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-dark mb-10"
+          className="text-4xl md:text-5xl font-bold text-dark mb-6"
         >
           Experience
         </motion.h2>
@@ -53,7 +53,7 @@ export default function Experience() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="space-y-6"
+          className="space-y-4"
         >
           {experience.map((job, index) => (
             <motion.div
@@ -61,10 +61,10 @@ export default function Experience() {
               variants={card}
               whileHover={{ y: -4, scale: 1.01 }}
               transition={{ duration: 0.2 }}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition"
+              className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition"
             >
 
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                 <h3 className="text-lg font-bold text-dark">
                   {job.role} • {job.company}
                 </h3>
@@ -74,7 +74,7 @@ export default function Experience() {
                 </span>
               </div>
 
-              <ul className="list-disc pl-5 text-dark space-y-1.5 mb-3 text-sm">
+              <ul className="list-disc pl-5 text-dark space-y-1 mb-2 text-sm">
                 {job.points.map((p, i) => (
                   <li key={i}>{p}</li>
                 ))}

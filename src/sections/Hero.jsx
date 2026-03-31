@@ -43,7 +43,7 @@ export default function Hero() {
             />
           </div>
           {/* NAME */}
-          <div className="space-y-1">
+          <div className="space-y-1 translate-y-2 md:translate-y-3">
             {/* NAME */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -108,7 +108,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Lasay_CV.pdf"
+              href="/portfolio/Lasay_CV.pdf"
               download
               className="px-6 md:px-8 py-3 md:py-4 border border-dark/60 text-dark/80 rounded-lg hover:bg-dark hover:text-white transition"
             >
@@ -122,7 +122,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex justify-center lg:justify-start gap-6 pt-2"
+            className="flex justify-center lg:justify-start gap-6"
           >
             <a
               href="https://github.com/alliahlasay4"
